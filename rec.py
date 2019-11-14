@@ -8,12 +8,12 @@ def generate(branch):
     a = branch.a
     translate(x, y)
     line(0, 0, 0, -sz)
-    if cnt < 50:
+    if cnt < total:
         translate(0, -sz)
         rotate(a)
-        e1 = Edge.edge(0, 0, sz * (0.67), cnt+1, a)
+        e1 = Edge.edge(0, 0, sz * (0.67), cnt+1, a, total)
         generate(e1)
         rotate(2 * -a)
-        e2 = Edge.edge(0, 0, sz + (0.67), cnt+1, a)
+        e2 = Edge.edge(0, 0, sz + (0.67), cnt+1, a, total)
         generate(e1)
     popMatrix()
