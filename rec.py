@@ -1,3 +1,5 @@
+# This is the main recursive function
+
 import edge as Edge
 def generate(branch):
     pushMatrix()
