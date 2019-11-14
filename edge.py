@@ -1,4 +1,4 @@
-# This is the class for the branch we are creating
+# This is the class for the edge of the fractal tree
 
 class edge():
     def __init__(self, x, y, sz, cnt, a, total):
